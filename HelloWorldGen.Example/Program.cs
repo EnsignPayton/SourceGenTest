@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace HelloWorldGen.Example
+﻿namespace HelloWorldGen.Example
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            HelloWorld.Message.Say();
         }
     }
 }
