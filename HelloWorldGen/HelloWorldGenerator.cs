@@ -11,7 +11,10 @@ namespace HelloWorldGen
 
         public void Initialize(GeneratorInitializationContext context)
         {
-            // System.Diagnostics.Debugger.Launch();
+#if DEBUG && FALSE
+            if (!System.Diagnostics.Debugger.IsAttached)
+                System.Diagnostics.Debugger.Launch();
+#endif
         }
 
         public void Execute(GeneratorExecutionContext context)
