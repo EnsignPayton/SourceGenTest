@@ -4,7 +4,7 @@
     {
         private static void Main(string[] args)
         {
-            //HelloWorld.Message.Say();
+            HelloWorld.Message.Say();
         }
     }
 }
